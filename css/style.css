@@ -36,7 +36,9 @@
     right: 9%;
     width: 82%;
     height: 33vh;
-    background-color: grey;
+    /* background-color: grey; */
+    background: rgb(143, 140, 140);
+    background: linear-gradient(0deg, rgba(143, 140, 140, 1) 0%, rgba(35, 35, 35, 1) 100%);
     border-radius: 10px 10px 50px 10px;
     border: 2px solid black;
 }
@@ -49,7 +51,9 @@
     bottom: 10%;
     width: 64%;
     height: 80%;
-    background-color: rgb(26, 88, 26);
+    background: rgb(26, 88, 26);
+    background: linear-gradient(0deg, rgba(26, 88, 26, 1) 6%, rgba(7, 27, 7, 1) 72%);
+
     border: 2px solid black;
 }
 
@@ -62,6 +66,14 @@
     background-color: black;
     left: 5%;
 
+}
+
+#simboloBateria{
+    position: relative;
+    top: 15%;
+    left: 9%;
+    color: white;
+    font-size: 1.7vh;
 }
 
 #textoBateria {
@@ -77,7 +89,7 @@
     right: -2vh;
     width: 30%;
     height: 20%;
-    top: 30%;
+    top: 20%;
 }
 
 #logo {
@@ -106,7 +118,6 @@
 
 #cruceta {
     position: absolute;
-    /* background-color: black; */
     top: 5%;
     left: 8%;
     display: grid;
@@ -127,52 +138,97 @@
     grid-column: 1/4;
     grid-row: 2;
 }
-.cruceta{
+
+.cruceta {
     background-color: rgb(35, 34, 34);
     border: outset rgb(26, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#crucetaArriba{
+
+#crucetaArriba {
     grid-column: 2;
     border-bottom: none;
 }
-#crucetaAbajo{
+
+#crucetaAbajo {
     grid-column: 2;
     grid-row: 3;
     border-top: none;
 }
-#crucetaDer{
+
+#crucetaDer {
     grid-column: 3;
     grid-row: 2;
     border-left: none;
 }
-#crucetaIzq{
+
+#crucetaIzq {
     grid-column: 1;
     grid-row: 2;
     border-right: none;
 }
-#crucetaCentro{
+
+#crucetaCentro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 2;
     grid-row: 2;
     border: none;
 }
+#circuloCruceta{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: rgb(82,79,79);
+background: linear-gradient(0deg, rgba(82,79,79,1) 6%, rgba(11,11,11,1) 44%);
+}
+
+#flechaArriba{
+
+   border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+#flechaAbajo{
+    border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 5px solid black;
+ }
+ #flechaDer{
+    border-left: 5px solid black;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+ }
+ #flechaIzq{
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+   border-right: 5px solid black;
+ }
 
 #divBotonesAB {
     position: absolute;
     right: 4%;
     top: 10%;
-    /* background-color: black; */
     height: 7vw;
     width: 7vw;
 }
 
 .botonAB {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50%;
     width: 50%;
-background: rgb(57,57,57);
-background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(57, 57, 57);
+    background: radial-gradient(circle, rgba(57, 57, 57, 1) 0%, rgba(0, 0, 0, 1) 100%);
     border-radius: 50%;
     border: groove 2px black;
+    color: white;
+    font-size: 3vh;
 }
 
 #botonB {
@@ -182,31 +238,58 @@ background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%);
 #botonA {
     right: 0%;
 }
-#divBotonesInf{
+
+#divBotonesInf {
     position: absolute;
     left: 35%;
     bottom: 30%;
     width: 25%;
     height: 15%;
-    /* background-color: black; */
 }
-.botonesInf{
-    background-color: rgb(47, 46, 46);
+
+.botonesInf {
+    background: rgb(47,46,46);
+background: linear-gradient(0deg, rgba(47,46,46,1) 6%, rgba(20,19,19,1) 44%);
     position: absolute;
     width: 40%;
     height: 55%;
     border-radius: 50px 50px 50px 50px;
     border: inset black;
 }
-#botonStart{
+
+#botonStart {
     right: 0;
 }
-/* #botonSelect{
-    background-color: brown;
-} */
-.textoBotonesInf{
+.textoBotonesInf {
     position: relative;
     top: 40%;
     left: 6%;
     color: white;
+    font-size: 2vh;
+}
+
+#divSonido {
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    height: 40%;
+    width:20%;
+    transform: rotate(65deg);
+}
+
+.barraSonido {
+    background-color: grey;
+    width: 100%;
+    height: 8%;
+    margin-top: 8%;
+    border-radius: 30px;
+    border: outset darkred;
+    background: rgb(50,48,48);
+background: radial-gradient(circle, rgba(50,48,48,1) 0%, rgba(114,111,111,1) 100%);
+}
+#imgPsyduck{
+    position: absolute;
+    bottom: 10%;
+    height:30%;
+    width: 30%;
 }
