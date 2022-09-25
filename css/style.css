@@ -1,4 +1,5 @@
 /* Cuerpo de la consola */
+
 #baseConsola {
 
     background-color: red;
@@ -15,6 +16,7 @@
 }
 
 /* Detalle extremo superior de la consola */
+
 #header {
     display: grid;
     height: 6%;
@@ -34,6 +36,7 @@
 }
 
 /* Parte superior de la consola */
+
 #divSuperior {
     position: absolute;
     top: 8%;
@@ -46,7 +49,9 @@
     border-radius: 10px 10px 50px 10px;
     border: 2px solid black;
 }
+
 /* Pantalla de juego */
+
 #divPantalla {
     position: absolute;
     top: 10%;
@@ -71,7 +76,9 @@
     left: 5%;
 
 }
+
 /* Detalles laterales de la pantalla */
+
 #simboloBateria {
     position: relative;
     top: 15%;
@@ -97,6 +104,7 @@
 }
 
 /* Parte inferior de la consola */
+
 #divInferior {
     position: absolute;
     top: 53%;
@@ -105,7 +113,9 @@
     width: 95%;
     height: 40vh;
 }
+
 /* Cruceta direccional */
+
 #cruceta {
     position: absolute;
     top: 5%;
@@ -157,6 +167,8 @@
     border: none;
 }
 
+/* Detalles cruceta */
+
 #circuloCruceta {
     width: 50%;
     height: 50%;
@@ -171,7 +183,7 @@
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
 }
-/* Detalles cruceta */
+
 #flechaAbajo {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -189,7 +201,9 @@
     border-bottom: 5px solid transparent;
     border-right: 5px solid black;
 }
+
 /* Botones A y B */
+
 #divBotonesAB {
     position: absolute;
     right: 4%;
@@ -221,6 +235,8 @@
     right: 0%;
 }
 
+/* Botones Inferiores */
+
 #divBotonesInferiores {
     position: absolute;
     left: 35%;
@@ -250,7 +266,9 @@
     color: white;
     font-size: 2vh;
 }
+
 /* Barras de sonido inferiores */
+
 #divSonido {
     position: absolute;
     bottom: 4%;
@@ -270,7 +288,9 @@
     background: rgb(50, 48, 48);
     background: radial-gradient(circle, rgba(50, 48, 48, 1) 0%, rgba(114, 111, 111, 1) 100%);
 }
+
 /* Imagenes decorativas */
+
 #imgPikachu {
     position: absolute;
     right: -2vh;
