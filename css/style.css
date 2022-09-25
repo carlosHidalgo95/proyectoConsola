@@ -1,3 +1,4 @@
+/* Cuerpo de la consola */
 #baseConsola {
 
     background-color: red;
@@ -13,6 +14,7 @@
     border: 3px solid black;
 }
 
+/* Detalle extremo superior de la consola */
 #header {
     display: grid;
     height: 6%;
@@ -31,6 +33,7 @@
     border-left: 3px solid darkred;
 }
 
+/* Parte superior de la consola */
 #divSuperior {
     position: absolute;
     top: 8%;
@@ -43,7 +46,7 @@
     border-radius: 10px 10px 50px 10px;
     border: 2px solid black;
 }
-
+/* Pantalla de juego */
 #divPantalla {
     position: absolute;
     top: 10%;
@@ -68,7 +71,7 @@
     left: 5%;
 
 }
-
+/* Detalles laterales de la pantalla */
 #simboloBateria {
     position: relative;
     top: 15%;
@@ -85,14 +88,6 @@
     font-size: 1.3vh;
 }
 
-#imgPkmn {
-    position: absolute;
-    right: -2vh;
-    width: 30%;
-    height: 20%;
-    top: 20%;
-}
-
 #logo {
     position: absolute;
     top: 47%;
@@ -101,12 +96,7 @@
     height: 3%;
 }
 
-#imgLogo {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
+/* Parte inferior de la consola */
 #divInferior {
     position: absolute;
     top: 53%;
@@ -115,7 +105,7 @@
     width: 95%;
     height: 40vh;
 }
-
+/* Cruceta direccional */
 #cruceta {
     position: absolute;
     top: 5%;
@@ -125,18 +115,6 @@
     grid-template-rows: 2vw 2vw 2vw;
     width: 30%;
     height: 40%;
-}
-
-#crucetaV {
-    background-color: black;
-    grid-column: 2;
-    grid-row: 1/4;
-}
-
-#crucetaH {
-    background-color: black;
-    grid-column: 1/4;
-    grid-row: 2;
 }
 
 .cruceta {
@@ -193,7 +171,7 @@
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
 }
-
+/* Detalles cruceta */
 #flechaAbajo {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
@@ -211,7 +189,7 @@
     border-bottom: 5px solid transparent;
     border-right: 5px solid black;
 }
-
+/* Botones A y B */
 #divBotonesAB {
     position: absolute;
     right: 4%;
@@ -243,7 +221,7 @@
     right: 0%;
 }
 
-#divBotonesInf {
+#divBotonesInferiores {
     position: absolute;
     left: 35%;
     bottom: 30%;
@@ -272,7 +250,7 @@
     color: white;
     font-size: 2vh;
 }
-
+/* Barras de sonido inferiores */
 #divSonido {
     position: absolute;
     bottom: 4%;
@@ -292,10 +270,24 @@
     background: rgb(50, 48, 48);
     background: radial-gradient(circle, rgba(50, 48, 48, 1) 0%, rgba(114, 111, 111, 1) 100%);
 }
+/* Imagenes decorativas */
+#imgPikachu {
+    position: absolute;
+    right: -2vh;
+    width: 30%;
+    height: 20%;
+    top: 20%;
+}
 
 #imgPsyduck {
     position: absolute;
     bottom: 10%;
     height: 30%;
     width: 30%;
+}
+
+#imgLogo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
